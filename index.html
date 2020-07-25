@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Fylo data storage component</title>
+
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;500&display=swap" rel="stylesheet">
+  <style>
+    body {
+      background-color: #162447;
+    }
+
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+    }
+
+    .attribution a {
+      color: hsl(228, 45%, 44%);
+    }
+
+    .box {
+      font-size: 12px;
+      color: white;
+      font-family:'Raleway', sans-serif;
+      font-weight: lighter;
+    }
+    .boxie {font-family:'Raleway', sans-serif;
+    font-weight: lighter;
+      font-size: 12px;
+      letter-spacing: 0.5px;
+    position:absolute;
+    top:240px;
+    left:700px;
+    z-index:5;}
+
+   .boxie strong {font-size: 17px;
+   font-weight: bold;}
+    pre {position:absolute;
+    top:300px;
+    left:700px;
+    z-index:5;}
+
+    .segment {
+      position: absolute;
+      top: 300px;
+      left: 0;
+      z-index: 1;
+    }
+
+    .rect {
+      background-color: hsl(228, 56%, 26%);
+      height: 130px;
+      width: 500px;
+      position: absolute;
+      left: 650px;
+      bottom: 250px;
+      z-index: 2;
+      border-radius:15px;
+    }
+
+    .mean {
+      background-color: hsl(228, 56%, 26%);
+      height: 150px;
+      width: 300px;
+      position: absolute;
+      left: 300px;
+      bottom: 250px;
+      z-index: 3;
+      border-top-right-radius: 80px;
+    }
+    .text {
+      font-family: 'Raleway', sans-serif;
+      color: rgb(255,255,255);
+      font-weight: 700;
+      font-size: 40px;
+      position: absolute;
+      top:185px;
+      left:380px;
+      z-index: 4;
+    }
+
+.document {
+  border: 1px solid hsl(229, 57%, 11%);
+background-color: hsl(229, 57%, 11%);
+padding: 6.5px 10.5px;
+border-radius: 7px;
+position: absolute;
+top:295px;
+left:345px;
+z-index: 5;}
+
+.folder {border: 1px solid hsl(229, 57%, 11%);
+background-color: hsl(229, 57%, 11%);
+padding: 8.5px;
+border-radius: 7px;
+position: absolute;
+top:295px;
+left:397px;
+z-index: 5;}
+.upload {border: 1px solid hsl(229, 57%, 11%);
+background-color: hsl(229, 57%, 11%);
+padding:9px 8.5px;
+border-radius: 7px;
+position: absolute;
+top:295px;
+left:450px;
+z-index:5;}
+
+.file {position: absolute;
+top:230px;
+left:330px;
+z-index:5;}
+
+.scale {position: absolute;
+  left: 700px;
+  top: 290px;
+  background-image: linear-gradient(to right,hsl(6, 100%, 80%), hsl(335, 100%, 65%));
+  height:13px;
+width:300px;
+border-radius:5px;
+z-index:6;}
+
+.scale2 {background-color: yellow;
+position: absolute;
+left: 990px;
+top:290px;
+width:13px;
+height:12px;
+border-radius:10px;
+z-index:6;
+}
+.bg {background-color: hsl(229, 57%, 11%);
+  border-radius: 10px;
+  position:absolute;
+  left:700px;
+  top:290px;
+  width:400px;
+  height:13px;
+z-index:5;}
+
+.white {position: absolute;
+  top:200px;
+  left: 970px;
+  background-color:#FFFFFF ;
+color: black;
+padding:10px 7px 8px 12px;
+height: 30px;
+width:100px;
+border-radius: 5px 5px 0 5px;
+font-size: 0.75em;
+font-family:'Raleway', sans-serif;
+z-index: 5;
+letter-spacing: 1px;}
+
+.speech {
+  position: absolute;
+  top:248px;
+left:1069px;
+border-right: 10px solid #FFFFFF;
+border-left: 10px solid transparent;
+border-bottom: 25px solid transparent;
+z-index: 5;}
+strong {font-size: 1.5rem;
+  font-weight: 700;}
+.attribution {
+  font-size:10px;
+  color:#FFFFFF;
+  position: absolute;
+top: 630px;
+left:550px;
+z-index: 5;}
+.attribution a {color:#ff9234;
+text-decoration: none;}
+
+.attribution a:hover {background-color: rgba(250,240,175, 0.2);
+  font-size: 12px;
+padding: 4px;
+border-radius: 5px;}
+  </style>
+</head>
+
+<body>
+<div class="speech">
+</div>
+  <div class="scale">
+  </div>
+  <div class="scale2">
+  </div>
+  <div class="mean">
+  </div>
+  <div class="bg">
+  </div>
+  <div class="white">
+    <strong>185</strong> <sup>GB LEFT</sup>
+  </div>
+  <div class="rect">
+  </div>
+    <p class="text">Fylo</p>
+    <div class="icon">
+    <img class="document" src="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenge 1\fylo-data-storage-component-master\images\icon-document.svg" alt="document" width="16" height="19">
+    <img class="folder" src="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenge 1\fylo-data-storage-component-master\images\icon-folder.svg" alt="Folder" width="19" height="16">
+    <img class="upload" src="C:\Users\Admin\Desktop\Web Development\Web Dev\Challenge 1\fylo-data-storage-component-master\images\icon-upload.svg" alt="Upload" width="21" height="15">
+   <img class="file" src="file:///C:/Users/Admin/Downloads/pile.svg" alt="file" width="40" height="40">
+  </div>
+  <div class="box">
+  <p class="boxie"> You’ve used <strong> 815 GB</strong> of your storage </p>
+  <p class="boxo"> <pre>0 GB                                                   1000 GB </pre></p>
+    <img class="segment" src="images/bg-desktop.png" alt="Image of the segment" style="width:100%; height:55%;">
+    <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <a href="mailto:rainasakshi54321.com">Sakshi Raina</a>.
+    </div> </div>
+</body>
+
+</html>
